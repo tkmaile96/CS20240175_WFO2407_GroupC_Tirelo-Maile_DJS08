@@ -1,11 +1,11 @@
 // import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Home from './Pages/Home'
-import About from './Pages/About'
+import Home from './Home'
+import About from './About'
 import Vans from './Vans/Vans'
 import VanDetail from './Vans/VanDetail'
-import Login from './Pages/Login'
+import Login from './Login'
 import Dashboard from './components/Hosts/Dashboard'
 import Income from './components/Hosts/Income'
 import Reviews from './components/Hosts/Reviews'
@@ -14,7 +14,7 @@ import HostVanDetail from './components/Hosts/HostVansDetails'
 import HostVanInfo from './components/Hosts/HostVanInfo'
 import HostVanPricing from './components/Hosts/HostVanPricing'
 import HostVanPhotos from './components/Hosts/HostVanPhotos'
-import NotFound from './Pages/NotFound'
+import NotFound from './NotFound'
 import Layout from './Components/Layout'
 import HostLayout from './Components/HostLayout'
 import AuthRequired from './Components/AuthRequired'
