@@ -1,12 +1,12 @@
 import React from "react"
 import { useParams, Link, NavLink, Outlet } from "react-router-dom"
-import { getHostVans } from "../../api"
+import { getHostVans } from "../api"
 
 export default function HostVanDetail() {
     const [currentVan, setCurrentVan] = React.useState(null)
     const [loading, setLoading] = React.useState(false)
     const [error, setError] = React.useState(null)
-    const { id } = useParams()
+    const { id } = useParams() // access the "id" parameter from the URl
 
     React.useEffect(() => {
         async function loadVans() {
