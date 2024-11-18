@@ -3,23 +3,24 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from './Home'
 import About from './About'
-import Vans from './Vans/Vans'
-import VanDetail from './Vans/VanDetail'
+import Vans from '../Vans/Vans'
+import VanDetail from '../Vans/VanDetail'
 import Login from './Login'
 import Dashboard from './components/Hosts/Dashboard'
 import Income from './components/Hosts/Income'
 import Reviews from './components/Hosts/Reviews'
-import HostVans from './components/Hosts/HostVans'
-import HostVanDetail from './components/Hosts/HostVansDetails'
-import HostVanInfo from './components/Hosts/HostVanInfo'
-import HostVanPricing from './components/Hosts/HostVanPricing'
-import HostVanPhotos from './components/Hosts/HostVanPhotos'
 import NotFound from './NotFound'
-import Layout from './Components/Layout'
-import HostLayout from './Components/HostLayout'
-import AuthRequired from './Components/AuthRequired'
+import Layout from './components/Layout'
+import HostLayout from './components/HostLayout'
+import AuthRequired from './components/AuthRequired'
+// import HostVans from './components/Hosts/HostVans'
+// import HostVanDetail from './components/Hosts/HostVansDetails'
+// import HostVanInfo from './components/Hosts/HostVanInfo'
+// import HostVanPricing from './components/Hosts/HostVanPricing'
+// import HostVanPhotos from './components/Hosts/HostVanPhotos'
 
-import "./server"
+
+
 
 
 function App() {
@@ -42,11 +43,11 @@ function App() {
               <Route index element={<Dashboard />} />
               <Route path="income" element={<Income />} />
               <Route path="reviews" element={<Reviews />} />
-              <Route path="vans" element={<HostVans />} />
-              <Route path="vans/:id" element={<HostVanDetail />}>
-                <Route index element={<HostVanInfo />} />
-                <Route path="pricing" element={<HostVanPricing />} />
-                <Route path="photos" element={<HostVanPhotos />} />
+              <Route  />
+              <Route path="vans/:id" >
+                <Route index  />
+                <Route path="pricing" />
+                <Route path="photos" />
               </Route>
             </Route>
           </Route>
